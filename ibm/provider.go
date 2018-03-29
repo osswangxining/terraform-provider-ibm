@@ -155,6 +155,10 @@ func Provider() terraform.ResourceProvider {
 			"ibm_cos_service_key":                  resourceIBMServiceKey(),
 			"ibm_appid_service_instance":           resourceIBMServiceInstance(),
 			"ibm_appid_service_key":                resourceIBMServiceKey(),
+			"ibm_appid_uiadmin_service_instance":   resourceIBMServiceInstance(),
+			"ibm_appid_uiadmin_service_key":        resourceIBMServiceKey(),
+			"ibm_appid_enduserui_service_instance": resourceIBMServiceInstance(),
+			"ibm_appid_enduserui_service_key":      resourceIBMServiceKey(),
 		},
 
 		ConfigureFunc: providerConfigure,
